@@ -54,7 +54,8 @@ section{padding:6rem 2rem;}
 
 /* PROBLEM */
 .problem{background:#141414;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
-.problem-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;margin-top:3rem;}
+.problem-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:3rem;}
+@media(max-width:600px){.problem-grid{grid-template-columns:1fr;}}
 .problem-item{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.75rem;position:relative;overflow:hidden;}
 .problem-item::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
 .problem-num{font-family:'Cormorant Garamond',serif;font-size:48px;color:rgba(201,169,110,0.15);line-height:1;margin-bottom:0.5rem;}
@@ -368,6 +369,31 @@ footer p{font-size:11px;color:var(--gray);}
   </div>
 </section>
 
+
+
+<!-- MEDITATION -->
+<section style="padding:5rem 2rem;border-top:1px solid var(--border);">
+  <div class="container fade-in" style="text-align:center;">
+    <span class="section-tag" style="display:block;margin-bottom:1rem;">Cadeau gratuit</span>
+    <h2 class="section-title" style="margin-bottom:1rem;">Méditation guidée — Lâcher-prise</h2>
+    <div class="gold-line center"></div>
+    <p style="font-size:13px;color:var(--gray);max-width:520px;margin:1.5rem auto 2.5rem;line-height:1.8;">
+      10 minutes pour toi. Pas pour ton travail, pas pour ta famille. Pour toi. Une première expérience de la Méthode ÉVEIL — offerte.
+    </p>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2.5rem;max-width:500px;margin:0 auto;">
+      <div style="font-family:Cormorant Garamond,serif;font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:0.5rem;">MÉDITATION ÉVEIL</div>
+      <div style="font-size:10px;color:var(--gray);letter-spacing:2px;text-transform:uppercase;margin-bottom:1.5rem;">Lâcher-prise · 10 min</div>
+      <div style="height:1px;background:var(--border);margin-bottom:1.5rem;"></div>
+      <audio controls style="width:100%;margin-bottom:1.5rem;accent-color:var(--gold);filter:invert(0);">
+        <source src="meditation.mp3" type="audio/mpeg">
+        Ton navigateur ne supporte pas la lecture audio.
+      </audio>
+      <a href="meditation.mp3" download="Meditation-Lacher-Prise-EVEIL-Yoann.mp3" class="btn-primary" style="display:block;text-align:center;font-size:12px;padding:1rem;">
+        Télécharger la méditation gratuite
+      </a>
+    </div>
+  </div>
+</section>
 
 <!-- GUIDE DOWNLOAD -->
 <section style="background:#141414;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:5rem 2rem;">
